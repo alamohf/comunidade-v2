@@ -1,17 +1,21 @@
 
-
-
 /* Reset basico*/
 .texto-comun, .titulo-site, .subtitulo {
     font-family: Arial, sans-serif;
     
 }
-
+body {
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
 /* Flex box no cabeçalho*/
 .cabecalho-principal {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
     background-color: #f8f9fa;
     padding: 20px;
@@ -22,11 +26,13 @@
     font-size: 24px;
     font-weight: bold;
     color: #1100aa;
+    margin-left: 50px;
 }
 
 .menu-navegacao {
     display: flex;
     gap: 15px;
+    margin-right: 50px;
 }
 
 .link-menu {
@@ -41,10 +47,10 @@
 .container-layout {
     display: flex;
     gap: 24px;
-    max-width: 1100px;
+    max-width: 1200px;
     padding: 32px 24px;
     margin: 0 auto;
-    align-items: flex-start;
+
 }
 
 .conteudo-principal {
@@ -53,6 +59,7 @@
     padding: 28px;
     border-radius: 12px;
     border: 1px solid #e0e0e0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .subtitulo {
@@ -70,6 +77,7 @@
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #e0e0e0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .titulo-lateral {
@@ -100,9 +108,10 @@
 .rodape-site {
     text-align: center;
     padding: 20px;
-    margin-top: 16px;
+    margin-top: auto;
     background-color: #1a1a2e;
     border-top: 3px solid #e8a255;
+    margin-top: auto;
 }
 
 .texto-rodape {
@@ -139,4 +148,13 @@
     border-radius: 5px;
     font-size: 16px;
     color: #333;
+}
+
+.link-menu {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-menu:hover {
+    background-color: #e8a255;
+    color: #fff;
 }
